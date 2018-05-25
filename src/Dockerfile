@@ -14,4 +14,4 @@ ARG storageAcccount=notset
 ARG storageKey=notset
 
 ENV AZURE_STORAGE_ACCOUNT=$storageAcccount
-ENV AZURE_STORAGE_KEY=$storageKey
+ENV AZURE_STORAGE_ACCESS_KEY=$storageKey

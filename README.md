@@ -18,6 +18,18 @@ FROM moimhossain/markdown-to-html
 
 WORKDIR /usr/src/app
 
+
+ARG storageAcccount=notset
+ARG storageKey=notset
+
+ENV AZURE_STORAGE_ACCOUNT=$storageAcccount
+ENV AZURE_STORAGE_ACCESS_KEY=$storageKey
+
+
+ADD  CloudCoreCapabilities.wiki ./wiki_raw/
+RUN node convert-markdown-to-html.js
+RUN node upload-to-blob-storage.js
+
 ADD  markdownfolder ./wiki_raw/
 RUN node convert-markdown-to-html.js
 RUN node upload-to-blob-storage.js
