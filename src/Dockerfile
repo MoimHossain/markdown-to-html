@@ -10,6 +10,8 @@ RUN npm install markdown-it --save
 RUN npm install azure-storage --save
 
 
-# ADD  CloudCoreCapabilities.wiki ./wiki_raw/
-# RUN node convert-markdown-to-html.js
-# RUN node upload-to-blob-storage.js
+ARG storageAcccount=notset
+ARG storageKey=notset
+
+ENV AZURE_STORAGE_ACCOUNT=$storageAcccount
+ENV AZURE_STORAGE_KEY=$storageKey
