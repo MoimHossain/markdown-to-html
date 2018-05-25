@@ -1,0 +1,22 @@
+{
+  "name": "markdown-to-html",
+  "version": "1.0.0",
+  "description": "Build the wiki markdown into a html representation",
+  "dependencies": {
+    "markdown-it": "^8.4.1",
+    "azure-storage": "^2.8.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "displayName": "Markdown To HTML",
+  "repository": {
+    "url": "https://github.com/MoimHossain/markdown-to-html",
+    "type": "git"
+  },
+  "author": "Moim Hossain",
+  "license": "MIT"
+}
+ 
