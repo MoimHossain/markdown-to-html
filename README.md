@@ -40,7 +40,7 @@ Once you have this `Dockerfile`, run it as following:
 
 ``` javascript
 
-docker build -t whatever --build-arg storageAcccount=AZURE_STORAGE_NAME --build-arg storageKey=AZURE_STORAGE_KEY
+docker build -t whatever --build-arg storageAcccount=AZURE_STORAGE_NAME --build-arg storageKey=AZURE_STORAGE_KEY --no-cache
 
 ``` 
 
